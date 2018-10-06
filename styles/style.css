@@ -89,3 +89,9 @@ h5 {
   text-align: center;
   padding: 10px;
 }
+
+.page {
+  margin: 0 0 10px 0;
+  background-color: #42abed;
+  color: white;
+}

@@ -9,13 +9,13 @@ angular.module('video-player')
         key: options.key,
         q: options.query,
         maxResults: options.max,
+        pageToken: options.pageToken,
         type: 'video',
         videoEmbeddable: 'true'
       },
       contentType: 'application/json',
     }).then(function successCallback(response) {
-        console.log("SUCCESS")
-       return callback(response.data.items)
+       callback(response.data)
       }).catch(function errorCallback(response) {
         console.log('ERROR')
       });
